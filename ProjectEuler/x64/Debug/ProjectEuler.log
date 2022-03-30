@@ -1,12 +1,2 @@
 ﻿  ProjectEuler.cpp
-C:\Users\Brandon\source\repos\ProjectEuler\ProjectEuler\ProjectEuler.cpp(53,28): warning C4244: 'argument': conversion from '__int64' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
-C:\Users\Brandon\source\repos\ProjectEuler\ProjectEuler\ProjectEuler.cpp(60,24): warning C4244: 'argument': conversion from '__int64' to '_Ty', possible loss of data
-          with
-          [
-              _Ty=int
-          ]
   ProjectEuler.vcxproj -> C:\Users\Brandon\source\repos\ProjectEuler\x64\Debug\ProjectEuler.exe
