@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 // Problem 1 - Multiples of 3 or 5
 void problem1 () {
     int sum = 0;
@@ -32,8 +32,40 @@ void problem2() {
     std::cout << "Problem 2 answer: " << sum << std::endl;
 }
 
+// Problem 3 - Largest Prime Factor
+void problem3() {
+
+    std::vector<int> vect;
+    long long int n = 600851475143;
+
+    // loop until n is not divisible by 2
+    while (n % 2 == 0)
+    {
+        vect.push_back(2);
+        n = n / 2;
+    }
+ 
+    // n must be odd here
+    for (long long int i = 3; i <= sqrt(n); i = i + 2)
+    {
+        while (n % i == 0)
+        {
+            vect.push_back(i);
+            n = n / i;
+        }
+    }
+
+    // if n is a prime number greater than 2
+    if (n > 2)
+        vect.push_back(n);
+
+    std::cout << "Problem 2 answer: " << vect.back() << std::endl;
+}
+
+
 int main()
 {
     problem1();
     problem2();
+    problem3();
 }
